@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIA Personal — Votre IA personnelle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AUTH SCREEN -->
+<div id="auth-screen" class="screen active">
+  <div class="auth-container">
+    <div class="auth-logo">
+      <div class="logo-hex">◆</div>
+      <h1>ARIA PERSONAL</h1>
+      <p>Votre intelligence artificielle personnelle</p>
+    </div>
+    <button id="google-login" class="btn-auth">
+      <span>🔐 Connexion Google</span>
+    </button>
+    <div class="auth-info">
+      <p>• Synchronisation multi-appareils</p>
+      <p>• Historique sécurisé avec Firebase</p>
+      <p>• Apprentissage personnel de vos préférences</p>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app-screen" class="screen">
+  <div class="app-container">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header-left">
+        <div class="reactor-mini">●</div>
+        <div>
+          <h2>ARIA</h2>
+          <p class="user-email" id="user-email">---</p>
+        </div>
+      </div>
+      <div class="header-right">
+        <button id="logout-btn" class="btn-small">Déconnexion</button>
+      </div>
+    </header>
+
+    <!-- CHAT -->
+    <div class="chat-container">
+      <div id="chat" class="chat"></div>
+      <div id="typing" class="typing hidden">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-zone">
+      <div class="input-box">
+        <input 
+          type="text" 
+          id="message-input" 
+          placeholder="Posez une question..."
+          autocomplete="off"
+        />
+        <button id="send-btn" class="btn-send">SEND</button>
+      </div>
+      <div class="quick-actions">
+        <button class="qa" onclick="ask('Qui suis-je ?')">◈ ME CONNAÎTRE</button>
+        <button class="qa" onclick="ask('Qu\\'as-tu appris de moi ?')">◉ MON PROFIL</button>
+        <button class="qa" onclick="ask('Quelle heure est-il ?')">⏱ HEURE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FIREBASE -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+<script src="https://accounts.google.com/gsi/client"></script>
+
+<script src="app.js"></script>
+</body>
+</html>
