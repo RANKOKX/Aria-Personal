@@ -2,12 +2,12 @@
 //  FIREBASE CONFIG — À REMPLACER PAR TES IDENTIFIANTS
 // ════════════════════════════════════════════════════════════════
 const firebaseConfig = {
-  apiKey: "AIzaSyCDqK2xB0_xxxxxxxxxxxxxxxXXXXXXX", // ← REMPLACE
-  authDomain: "aria-personal-xxxxx.firebaseapp.com",
-  projectId: "aria-personal-xxxxx",
-  storageBucket: "aria-personal-xxxxx.appspot.com",
-  messagingSenderId: "xxxxxxxxx",
-  appId: "1:xxxxxxxxx:web:xxxxxxxxxxxx"
+  apiKey: "AIzaSyCCu_p62FJPibSaYkzrFSu5z_WoO5LjDQo", 
+  authDomain: "aria-personal-9210f.firebaseapp.com",
+  projectId: "aria-personal-9210f",
+  storageBucket: "aria-personal-9210f.firebasestorage.app",
+  messagingSenderId: "213629125436",
+  appId: "1:213629125436:web:8ee5dd4d87ff785e571439"
 };
 
 // Initialize Firebase
